@@ -5,12 +5,18 @@
 
 </script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<style>
 
-{#each members as member}
-  <a href="/{member.id}">
-    <h2>{member.name}</h2>
-    <img src="{member.avatar}" alt="{member.name}" width="100"/>
-  </a>
-{/each}
+</style>
+
+<div class="card">
+  <h1>Rick Pijnacker</h1>
+  <p>Frontend developer & Designer</p>
+  <img src="src/lib/assets/darts.png" alt="darts" class="darts">
+
+  <nav class="contact-info">
+    <p>RickFDND</p>
+    <p>+31 614772210</p>
+  </nav>
+</div>
+
