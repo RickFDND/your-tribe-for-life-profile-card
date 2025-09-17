@@ -1,22 +1,14 @@
 <script>
+
     let { data } = $props();
 
-    const members = data.members;
+    const member = data.member;
+    
+    import { Card } from '$lib';
 
 </script>
 
-<style>
 
-</style>
+  <Card {member}/>
 
-<div class="card">
-  <h1>Rick Pijnacker</h1>
-  <p>Frontend developer & Designer</p>
-  <img src="src/lib/assets/darts.png" alt="darts" class="darts">
-
-  <nav class="contact-info">
-    <p>RickFDND</p>
-    <p>+31 614772210</p>
-  </nav>
-</div>
 
