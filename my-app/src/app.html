@@ -11,9 +11,27 @@
 </html>
 
 <style>
+	@layer base {
+		:root {
+			/* sRGB hex */
+    		--color-gray-100: #fcfcfc;
+    		--color-gray-200: #fafafa;
+    		--color-gray-300: #f4f4f4;
+				
+    		@supports (color: oklch(0 0 0)) {
+    		  /* OKLCH */
+    		  --color-gray-100: oklch(0.991 0 0);
+    		  --color-gray-200: oklch(0.982 0 0);
+    		  --color-gray-300: oklch(46.962% 0.17827 27.635);
+    		}
+
+			background-color: var(--color-gray-300);
+		}
+  	}
 	body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		height: 100vh;
 	}
 </style>

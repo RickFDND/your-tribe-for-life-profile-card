@@ -15,7 +15,7 @@
 
       <nav class="contact-info">
         <p>{member.github_handle}</p>
-        <p>+31 614772210</p>
+        <p>+31 614772211</p>
       </nav>
     </div>
   </div>
@@ -75,6 +75,7 @@
   .card-content-front {
     background: transparent;
     transform: rotateY(180deg); 
+    border: 2px solid black;
 
     h1 {
       font-weight: bold;
